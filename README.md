@@ -1,11 +1,19 @@
-# AN Shoes Website
+# AN Shoes Website (TM-T_BT3)
 
-Static website deployed to Render.
+GitHub: https://github.com/huyan189/TM-T_BT3
 
-## Live Demo
-TBD after deployment (e.g., https://an-shoes.onrender.com)
+## Deployed on Render
+https://tm-t-bt3.onrender.com (sẽ cập nhật sau khi deploy)
 
-## Local Run
-Open `AnShoes.html` in browser.
+## Local Test
+```bash
+open AnShoes.html
+```
+
+## Render Deployment (1 phút)
+1. Đăng nhập https://render.com
+2. New+ > Static Site > Connect GitHub repo `huyan189/TM-T_BT3`
+3. Branch `main`, Root `/`, Build `none`, Publish `AnShoes.html`
+4. Deploy! Site live ngay.
 
 
