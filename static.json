@@ -1,3 +1,7 @@
 {
-  "publish": "."
+  "publish": ".",
+  "routes": {
+    "/": {"src": "/AnShoes.html"},
+    "/**": {"src": "/**"}
+  }
 }
