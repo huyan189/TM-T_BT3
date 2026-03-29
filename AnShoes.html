@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AN SHOES</title>
+    <style>
+        /* Reset CSS cơ bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            padding: 40px;
+            color: #111;
+        }
+
+        /* Header */
+        h1.logo {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Thanh Filter */
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #dcdcdc; /* Màu xám nhạt */
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .filter-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .filter-menu li {
+            cursor: pointer;
+        }
+
+        .sort-by {
+            cursor: pointer;
+        }
+
+        /* Tags đang chọn */
+        .active-filters {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .active-filters .tag {
+            cursor: pointer;
+        }
+
+        .active-filters .clear-all {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Grid Sản phẩm */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-image {
+            background-color: #f0f0f0; /* Màu nền khu vực ảnh */
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .product-info {
+            background-color: #dcdcdc; /* Màu nền khu vực chữ */
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .product-info .category {
+            font-size: 14px;
+        }
+
+        .product-info .product-name {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.4;
+        }
+
+        .product-info .price {
+            font-size: 14px;
+            margin-top: auto; /* Đẩy giá tiền xuống đáy nếu tên giày dài ngắn khác nhau */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="logo">AN SHOES</h1>
+
+    <div class="filter-bar">
+        <ul class="filter-menu">
+            <li>Giới tính</li>
+            <li>Nhãn hiệu</li>
+            <li>Thể thao</li>
+            <li>Kích cỡ</li>
+            <li>Màu</li>
+            <li>Bộ sưu tập</li>
+        </ul>
+        <div class="sort-by">Bộ lọc + Short By &#9652;</div>
+    </div>
+
+    <div class="active-filters">
+        <span class="tag">giày x</span>
+        <span class="tag">chạy x</span>
+        <span class="clear-all">clear all</span>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/af1.png" alt="Nike Air Force 1">
+            </div>
+            <div class="product-info">
+                <div class="category">chạy</div>
+                <h3 class="product-name">GIÀY NIKE AIR FORCE 1 LOW</h3>
+                <div class="price">2.600.000 đ</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/cvl.jpg" alt="Nike Court Vision">
+            </div>
+            <div class="product-info">
+                <div class="category">chạy</div>
+                <h3 class="product-name">GIÀY NIKE COURT VISION</h3>
+                <div class="price">2.500.000 đ</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/dlr.webp" alt="Nike Dunk Low">
+            </div>
+            <div class="product-info">
+                <div class="category">chạy</div>
+                <h3 class="product-name">GIÀY NIKE DUNK LOW RETRO</h3>
+                <div class="price">2.800.000 đ</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/b1p.jpg" alt="Nike Book 1">
+            </div>
+            <div class="product-info">
+                <div class="category">chạy</div>
+                <h3 class="product-name">GIÀY NIKE BOOK 1 PREMIUM</h3>
+                <div class="price">4.000.000 đ</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
