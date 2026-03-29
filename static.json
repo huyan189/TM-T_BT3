@@ -1,0 +1,9 @@
+{
+  "staticfiles": {
+    "enabled": true,
+    "watch": true
+  },
+  "buildCommand": "",
+  "publish": "AnShoes.html"
+}
+
